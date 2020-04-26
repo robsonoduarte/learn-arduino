@@ -1,7 +1,7 @@
 #include <Arduino.h>
 
 void setup() {
-    pinMode(LED_BUILTIN,HIGH);
+    pinMode(LED_BUILTIN,OUTPUT);
 }
 
 void loop() {
@@ -9,6 +9,5 @@ void loop() {
     delay(2000);
     digitalWrite(LED_BUILTIN, LOW);
     delay(2000);
-
     // :rocket: :ontraker: :arduino:
 }
