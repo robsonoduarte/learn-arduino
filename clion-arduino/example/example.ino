@@ -1,13 +1,13 @@
 #include <Arduino.h>
 
 void setup() {
-    pinMode(LED_BUILTIN,OUTPUT);
+    /*pinMode(LED_BUILTIN,OUTPUT);*/
 }
 
 void loop() {
-    digitalWrite(LED_BUILTIN, HIGH);
-    delay(2000);
+/*    digitalWrite(LED_BUILTIN, HIGH);
+    delay(3000);
     digitalWrite(LED_BUILTIN, LOW);
-    delay(2000);
+    delay(3000);*/
     // :rocket: :ontraker: :arduino:
 }
