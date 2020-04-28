@@ -7,7 +7,7 @@
 
 ![image](https://user-images.githubusercontent.com/797845/80540020-e17a6180-897e-11ea-980d-da335b217ade.png)
 
-* 3 - Upload Sketch:
-gif...
-* 4 - Arduino Board:
-gif... 
+* 3 - Import Project and Upload Sketch:
+
+
+
