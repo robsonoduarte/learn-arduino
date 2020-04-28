@@ -16,6 +16,10 @@ CLion
 Create Project
 
 Some Settings... 
+- ARDUINO_SDK_PATH
+- Serial port ( Arduino Support )
+...
 
 Run ( upload programmer )
+Debug ?
 
