@@ -1,4 +1,4 @@
-# learn-arduino
+## learn-arduino
 
 Repo with studies about [Arduino](https://www.arduino.cc/)
 
