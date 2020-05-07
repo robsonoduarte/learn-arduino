@@ -8,3 +8,4 @@ You can see how setup this environment [here](https://github.com/robsonoduarte/l
 The projects made in this course are:
 
 * [Blink](https://github.com/robsonoduarte/learn-arduino/tree/master/arduino-courses/arduino-brazilian-course/blink)
+* [Fade with Circuit](https://github.com/robsonoduarte/learn-arduino/tree/master/arduino-courses/arduino-brazilian-course/fade-with-circuit)
