@@ -7,7 +7,7 @@ set(${PROJECT_NAME}_BOARD megaADK)
 project(${PROJECT_NAME})
 
 ### Main sketch file
-set(${PROJECT_NAME}_SKETCH asc2.ino)
+set(${PROJECT_NAME}_SKETCH asc2table.ino)
 
 
 ### Additional settings to add non-standard or your own Arduino libraries.
