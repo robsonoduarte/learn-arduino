@@ -1,4 +1,4 @@
-# Blink Project
+### Blink
 
 You can see more information of this `Sketch` [Here](http://www.arduino.cc/en/Tutorial/Blink) on Arduino public examples.
 
