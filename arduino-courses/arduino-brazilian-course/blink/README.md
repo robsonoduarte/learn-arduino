@@ -1,13 +1,9 @@
 # Blink Project
 
-#### The basic project to test the Development Environment:
+You can see more information of this `Sketch` [Here](http://www.arduino.cc/en/Tutorial/Blink) on Arduino public examples.
 
-* 1 - [First Setup Environment](https://github.com/robsonoduarte/learn-arduino/tree/master/clion-arduino/example) 
-* 2 - The [Code](https://github.com/robsonoduarte/learn-arduino/blob/master/arduino-courses/arduino-brazilian-course/blink/blink.ino):
+For upload the `Sketch` on Arduino using the Clion see this [documentation](https://github.com/robsonoduarte/learn-arduino/tree/master/clion-arduino)
 
-![image](https://user-images.githubusercontent.com/797845/80540020-e17a6180-897e-11ea-980d-da335b217ade.png)
 
-* 3 - Import Project and Upload Sketch:
 
-[![Alt text](https://img.youtube.com/vi/4ZCBo1Cjdy0/0.jpg)](https://www.youtube.com/watch?v=4ZCBo1Cjdy0)
 
