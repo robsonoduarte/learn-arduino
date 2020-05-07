@@ -7,7 +7,7 @@
 # You can obtain one at http://mozilla.org/MPL/2.0/.
 #=============================================================================#
 set(CMAKE_SYSTEM_NAME Arduino)
-
+set(ARDUINO_SDK_PATH /snap/arduino/current)
 set(CMAKE_C_COMPILER   avr-gcc)
 set(CMAKE_CXX_COMPILER avr-g++)
 
