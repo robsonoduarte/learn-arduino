@@ -1,8 +1,5 @@
 #include <Arduino.h>
 
-// This sketch was based on https://www.arduino.cc/en/Tutorial/ASCIITable
-// We only add the convert function...
-
 int thisByte = 33;
 
 void setup() {
