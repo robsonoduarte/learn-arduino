@@ -10,3 +10,4 @@ The projects made in this course are:
 * [Blink](https://github.com/robsonoduarte/learn-arduino/tree/master/arduino-courses/arduino-brazilian-course/blink)
 * [Fade](https://github.com/robsonoduarte/learn-arduino/tree/master/arduino-courses/arduino-brazilian-course/fade)
 * [ASCII Table](https://github.com/robsonoduarte/learn-arduino/tree/master/arduino-courses/arduino-brazilian-course/asc2table)
+* [Blink Leds](https://github.com/robsonoduarte/learn-arduino/tree/master/arduino-courses/arduino-brazilian-course/blink-leds)
