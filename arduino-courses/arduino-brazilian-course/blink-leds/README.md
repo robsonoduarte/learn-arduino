@@ -20,7 +20,7 @@ void setup() {
 }
 ```
 
-* [The loop](https://github.com/robsonoduarte/learn-arduino/blob/16c4ec128128e7b115bd3390c5842b16532340a2/arduino-courses/arduino-brazilian-course/blink-leds/blink_leds.ino#L18-L22) to blink the leads:
+* [The loop](https://github.com/robsonoduarte/learn-arduino/blob/16c4ec128128e7b115bd3390c5842b16532340a2/arduino-courses/arduino-brazilian-course/blink-leds/blink_leds.ino#L18-L22) to blink the leds:
 ```
 void loop() {
     blinkLed(8, 1000);
