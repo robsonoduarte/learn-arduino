@@ -17,7 +17,6 @@ link_directories(${CMAKE_CURRENT_SOURCE_DIR}/)
 #### Additional settings for programmer. From programmers.txt
 set(${PROJECT_NAME}_PROGRAMMER avrisp)
 set(${PROJECT_NAME}_PORT /dev/ttyUSB0)
-set(megaADK.upload.speed 9600)
 
 ## Verbose build process
 set(${PROJECT_NAME}_AFLAGS -v)
