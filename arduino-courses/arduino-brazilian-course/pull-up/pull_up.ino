@@ -1,7 +1,7 @@
 #include <Arduino.h>
 
 int btnPin = 3;
-int ledPin = 10;
+int ledPin = 12;
 
 void setup() {
     pinMode(btnPin, INPUT);
