@@ -14,6 +14,11 @@ Set the button as [INPUT](https://github.com/robsonoduarte/learn-arduino/blob/b6
 pinMode(btnPin, INPUT);
 ```
 
+Read the [state of button](https://github.com/robsonoduarte/learn-arduino/blob/b6bcdfbc73d9268f472574bbf3cfc5062b1d896a/arduino-courses/arduino-brazilian-course/pull-down/pull_down.ino#L14):
+```
+btnState = digitalRead(btnPin);
+```    
+
 Using the serial port to see the [state of button](https://github.com/robsonoduarte/learn-arduino/blob/b6bcdfbc73d9268f472574bbf3cfc5062b1d896a/arduino-courses/arduino-brazilian-course/pull-down/pull_down.ino#L20):
 ```
 Serial.println(btnState);
