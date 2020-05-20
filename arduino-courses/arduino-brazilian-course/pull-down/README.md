@@ -1,15 +1,25 @@
 ### Pull Down
 
-The simple circuit to see the concepts about [Pull Down](https://www.arduino.cc/en/Tutorial/InputPullupSerial) with one Led.
+The simple circuit to see the concepts about Pull Down with one Led.
 
-![image](https://user-images.githubusercontent.com/797845/82070460-273b6780-96ab-11ea-9f29-9d8db0669346.png)
+![image](https://user-images.githubusercontent.com/797845/82469573-9265af00-9a9a-11ea-88f5-8abf034f53fc.png)
 
-Set the button as [INPUT](https://github.com/robsonoduarte/learn-arduino/blob/b0641c52d7940d15b5c2e160d52572a76614ea00/arduino-courses/arduino-brazilian-course/pull-up/pull_up.ino#L7):
+Set initial [state of button](https://github.com/robsonoduarte/learn-arduino/blob/2ce47bd13fec1f4112b32cd2f1ffa5ae176e35eb/arduino-courses/arduino-brazilian-course/pull-down/pull_down.ino#L4):
+```
+int btnState = 1;
+```
+
+Set the button as [INPUT](https://github.com/robsonoduarte/learn-arduino/blob/b6bcdfbc73d9268f472574bbf3cfc5062b1d896a/arduino-courses/arduino-brazilian-course/pull-down/pull_down.ino#L8):
 ```
 pinMode(btnPin, INPUT);
 ```
 
-Using the serial port to see the [state of button](https://github.com/robsonoduarte/learn-arduino/blob/b0641c52d7940d15b5c2e160d52572a76614ea00/arduino-courses/arduino-brazilian-course/pull-up/pull_up.ino#L16):
+Read the [state of button](https://github.com/robsonoduarte/learn-arduino/blob/b6bcdfbc73d9268f472574bbf3cfc5062b1d896a/arduino-courses/arduino-brazilian-course/pull-down/pull_down.ino#L14):
+```
+btnState = digitalRead(btnPin);
+```    
+
+Using the serial port to see the [state of button](https://github.com/robsonoduarte/learn-arduino/blob/b6bcdfbc73d9268f472574bbf3cfc5062b1d896a/arduino-courses/arduino-brazilian-course/pull-down/pull_down.ino#L20):
 ```
 Serial.println(btnState);
 ```
