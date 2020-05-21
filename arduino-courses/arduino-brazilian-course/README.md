@@ -13,4 +13,4 @@ The projects made in this course are:
 * [Blink Leds](https://github.com/robsonoduarte/learn-arduino/tree/master/arduino-courses/arduino-brazilian-course/blink-leds)
 * [Pull Up](https://github.com/robsonoduarte/learn-arduino/tree/master/arduino-courses/arduino-brazilian-course/pull-up)
 * [Pull Down](https://github.com/robsonoduarte/learn-arduino/tree/master/arduino-courses/arduino-brazilian-course/pull-down)
-* [Blink Leds with Pull Down](https://github.com/robsonoduarte/learn-arduino/tree/master/arduino-courses/arduino-brazilian-course/blink-leds-pull-up)
+* [Blink Leds with Pull Up](https://github.com/robsonoduarte/learn-arduino/tree/master/arduino-courses/arduino-brazilian-course/blink-leds-pull-up)
