@@ -1,4 +1,4 @@
-### Blink Leds With Pull Up
+# Blink Leds With Pull Up
 
 The simple circuit to mix the [Blink Leds](https://github.com/robsonoduarte/learn-arduino/tree/master/arduino-courses/arduino-brazilian-course/blink-leds) with [Pull Up](https://github.com/robsonoduarte/learn-arduino/tree/master/arduino-courses/arduino-brazilian-course/pull-up).
 
