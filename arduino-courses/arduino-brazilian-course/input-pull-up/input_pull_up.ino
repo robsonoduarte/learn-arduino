@@ -3,7 +3,7 @@
 int btnRedPin = 3;
 int btnBluePin = 4;
 int ledRedPin = 10;
-int ledBluePin = 10;
+int ledBluePin = 11;
 
 void setup() {
     pinMode(btnRedPin, INPUT_PULLUP);
@@ -14,7 +14,7 @@ void setup() {
 
 void loop() {
     int btnReadState = digitalRead(btnRedPin);
-    int btnBlueState = digitalRead(btnBlueState);
+    int btnBlueState = digitalRead(btnBluePin);
     digitalWrite(ledRedPin, btnReadState);
     digitalWrite(ledBluePin, btnBlueState);
 }
