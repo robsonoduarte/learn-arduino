@@ -1,4 +1,4 @@
-##Input Pull Up
+# Input Pull Up
 
 Simple Circuit to see how we can simplify the [Pull Up](https://github.com/robsonoduarte/learn-arduino/tree/master/arduino-courses/arduino-brazilian-course/pull-up) using the Arduino [INPUT_PULLUP](https://www.arduino.cc/reference/en/language/variables/constants/constants/):
 
