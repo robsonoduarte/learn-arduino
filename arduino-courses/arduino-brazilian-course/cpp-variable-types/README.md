@@ -1,6 +1,6 @@
 # C++ Variable Types
 
-The simple Sketch to see how can used on Arduino [c++ variable types](https://www.arduino.cc/reference/en/#variables)
+The simple Sketch to see how can used on Arduino [C++ variable types](https://www.arduino.cc/reference/en/#variables)
 
 
 * [array](https://github.com/robsonoduarte/learn-arduino/blob/8f1b9be30783e76759f0c22642e39b7f33d2f59b/arduino-courses/arduino-brazilian-course/cpp-variable-types/cpp_variable_types.ino#L4)
