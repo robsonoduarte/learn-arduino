@@ -1,10 +1,12 @@
 #include <Arduino.h>
 
+int pin = 9;
 
 void setup() {
-    Serial.begin(9600);
+    pinMode(pin, OUTPUT);
 }
 
 void loop() {
-    Serial.println(analogRead(A0));
+    int analogState = analogRead(A0);
+    analogWrite(pin, analogState);
 }
