@@ -1,12 +1,14 @@
 #include <Arduino.h>
 
-int pin = 9;
+int pinRedLed = 9;
+int pinBlueLed = 10;
 
 void setup() {
-    pinMode(pin, OUTPUT);
+    pinMode(pinRedLed, OUTPUT);
 }
 
 void loop() {
     int analogState = analogRead(A0);
-    analogWrite(pin, analogState);
+    analogWrite(pinRedLed, map(analogState, 0, 1023, 0, 255));
+    analogWrite(pinBlueLed, map(analogState, 0, 1023, 255, 0));
 }
