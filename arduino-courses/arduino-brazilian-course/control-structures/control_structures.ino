@@ -1,22 +1,34 @@
 #include <Arduino.h>
 
-int btnPin = 3;
-int ledPin = 12;
+int btnBlinkPin = 2;
+
+int ledRedPin = 8;
+int ledGreenPin = 9;
+int ledBluePin = 10;
+
+
+void blinkLed(int pin);
 
 void setup() {
-    pinMode(btnPin, INPUT);
-    pinMode(ledPin, OUTPUT);
-    Serial.begin(9600);
+    pinMode(btnBlinkPin, INPUT_PULLUP);
+    pinMode(ledRedPin, OUTPUT);
+    pinMode(ledGreenPin, OUTPUT);
+    pinMode(ledBluePin,OUTPUT);
 }
 
 void loop() {
-    int btnState = digitalRead(btnPin);
-    if(btnState == LOW){
-        digitalWrite(ledPin, HIGH);
-        Serial.println(btnState);
-    } else{
-        digitalWrite(ledPin, LOW);
-        Serial.println(btnState);
+    bool btnBlinkState = digitalRead(btnBlinkPin);
+    if(!btnBlinkState){
+        blinkLed(ledRedPin);
+        blinkLed(ledGreenPin);
+        blinkLed(ledBluePin);
     }
-    delay(1000);
 }
+
+void blinkLed(int pin) {
+    digitalWrite(pin, HIGH);
+    delay(500);
+    digitalWrite(pin, LOW);
+    delay(500);
+}
+
