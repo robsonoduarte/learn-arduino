@@ -16,4 +16,6 @@ The projects made in this course are:
 * [Blink Leds with Pull Up](https://github.com/robsonoduarte/learn-arduino/tree/master/arduino-courses/arduino-brazilian-course/blink-leds-pull-up)
 * [Input Pull Up](https://github.com/robsonoduarte/learn-arduino/tree/master/arduino-courses/arduino-brazilian-course/input-pull-up)
 * [C++ variable Types](https://github.com/robsonoduarte/learn-arduino/tree/master/arduino-courses/arduino-brazilian-course/cpp-variable-types)
+* [C++ Control Structures](https://github.com/robsonoduarte/learn-arduino/tree/master/arduino-courses/arduino-brazilian-course/control-structures)
+
 
