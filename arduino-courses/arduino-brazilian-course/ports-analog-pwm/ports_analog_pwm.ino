@@ -5,6 +5,7 @@ int pinBlueLed = 10;
 
 void setup() {
     pinMode(pinRedLed, OUTPUT);
+    pinMode(pinBlueLed, OUTPUT);
 }
 
 void loop() {
