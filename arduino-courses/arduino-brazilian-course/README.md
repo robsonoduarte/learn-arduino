@@ -15,6 +15,7 @@ The projects made in this course are:
 * [Pull Down](https://github.com/robsonoduarte/learn-arduino/tree/master/arduino-courses/arduino-brazilian-course/pull-down)
 * [Blink Leds with Pull Up](https://github.com/robsonoduarte/learn-arduino/tree/master/arduino-courses/arduino-brazilian-course/blink-leds-pull-up)
 * [Input Pull Up](https://github.com/robsonoduarte/learn-arduino/tree/master/arduino-courses/arduino-brazilian-course/input-pull-up)
+* [Ports Analog PWM](https://github.com/robsonoduarte/learn-arduino/tree/master/arduino-courses/arduino-brazilian-course/ports-analog-pwm)
 * [C++ variable Types](https://github.com/robsonoduarte/learn-arduino/tree/master/arduino-courses/arduino-brazilian-course/cpp-variable-types)
 * [C++ Control Structures](https://github.com/robsonoduarte/learn-arduino/tree/master/arduino-courses/arduino-brazilian-course/control-structures)
 
