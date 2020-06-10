@@ -26,21 +26,27 @@ void setup() {
 }
 
 void loop() {
-    bool btnBlinkState = !digitalRead(btnBlinkPin);
-    bool btnFadeState = !digitalRead(btnFadePin);
-    
-    if (btnBlinkState) {
-        blinkLed(ledRedPin);
-        blinkLed(ledGreenPin);
-        blinkLed(ledBluePin);
-    } else if (btnFadeState) {
-        fadeLed(ledRedPin);
-        fadeLed(ledGreenPin);
-        fadeLed(ledBluePin);
-    } else {
-        turnOffLed(ledRedPin);
-        turnOffLed(ledGreenPin);
-        turnOffLed(ledBluePin);
+
+    int state = !digitalRead(btnBlinkPin) ?  1 : !digitalRead(btnFadePin) ? 2 : 0 ;
+
+    switch (state) {
+        case 1:{
+            blinkLed(ledRedPin);
+            blinkLed(ledGreenPin);
+            blinkLed(ledBluePin);
+            break;
+        }
+        case 2:{
+            fadeLed(ledRedPin);
+            fadeLed(ledGreenPin);
+            fadeLed(ledBluePin);
+            break;
+        }
+        default:{
+            turnOffLed(ledRedPin);
+            turnOffLed(ledGreenPin);
+            turnOffLed(ledBluePin);
+        }
     }
 }
 
@@ -54,7 +60,7 @@ void fadeLed(int pin) {
     if (brightness <= 0 || brightness >= 255) {
         fadeAmount = -fadeAmount;
     }
-    delay(30);
+    delay(50);
 }
 
 void blinkLed(int pin) {
