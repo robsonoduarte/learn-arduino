@@ -7,18 +7,15 @@ int pinLedBlue = 10;
 int pinBtnBlink = 4;
 int pinBtnStopBlink = 3;
 
-int blink;
+bool blink;
 
-int stateBtnBlink;
-int stateBtnStopBlink;
 int lastStateBtnBlink = HIGH;
 int lastStateBtnStopBlink = HIGH;
 
-unsigned long debounceDelay = 300;
-unsigned long lastDebounceTime;
+unsigned long debounceDelay = 50;
+unsigned long lastDebounceTime = 0;
 
 void blinkLed(int pin);
-
 
 void setup() {
     pinMode(pinLedRead, OUTPUT);
@@ -39,19 +36,11 @@ void loop() {
     }
 
     if ((millis() - lastDebounceTime) > debounceDelay) {
-
-        if (readingBtnBlink != stateBtnBlink) {
-            stateBtnBlink = readingBtnBlink;
-            if (stateBtnBlink == LOW) {
-                blink = HIGH;
-            }
+        if (readingBtnBlink == LOW) {
+            blink = true;
         }
-
-        if (readingBtnStopBlink != stateBtnStopBlink) {
-            stateBtnStopBlink = readingBtnStopBlink;
-            if (stateBtnStopBlink == LOW) {
-                blink = LOW;
-            }
+        if (readingBtnStopBlink == LOW) {
+            blink = false;
         }
     }
 
