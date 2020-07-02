@@ -19,5 +19,6 @@ The projects made in this course are:
 * [C++ variable Types](https://github.com/robsonoduarte/learn-arduino/tree/master/arduino-courses/arduino-brazilian-course/cpp-variable-types)
 * [C++ Control Structures](https://github.com/robsonoduarte/learn-arduino/tree/master/arduino-courses/arduino-brazilian-course/control-structures)
 * [C++ Switch](https://github.com/robsonoduarte/learn-arduino/tree/master/arduino-courses/arduino-brazilian-course/switch)
+* [Debounce](https://github.com/robsonoduarte/learn-arduino/tree/master/arduino-courses/arduino-brazilian-course/debounce)
 
 
