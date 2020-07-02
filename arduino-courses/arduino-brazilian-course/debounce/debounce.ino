@@ -15,8 +15,7 @@ int lastStateBtnBlink = HIGH;
 int lastStateBtnStopBlink = HIGH;
 
 unsigned long debounceDelay = 300;
-unsigned long lastDebounceTimeBtnBlink;
-unsigned long lastDebounceTimeBtnStopBlink;
+unsigned long lastDebounceTime;
 
 void blinkLed(int pin);
 
@@ -35,26 +34,19 @@ void loop() {
     int readingBtnBlink = digitalRead(pinBtnBlink);
     int readingBtnStopBlink = digitalRead(pinBtnStopBlink);
 
-    if (readingBtnBlink != lastStateBtnBlink ) {
-        lastDebounceTimeBtnBlink = millis();
+    if (readingBtnBlink != lastStateBtnBlink || readingBtnStopBlink != lastStateBtnStopBlink) {
+        lastDebounceTime = millis();
     }
 
-    if (readingBtnStopBlink != lastStateBtnStopBlink) {
-        lastDebounceTimeBtnStopBlink = millis();
-    }
+    if ((millis() - lastDebounceTime) > debounceDelay) {
 
-
-    if ((millis() - lastDebounceTimeBtnBlink) > debounceDelay) {
         if (readingBtnBlink != stateBtnBlink) {
             stateBtnBlink = readingBtnBlink;
             if (stateBtnBlink == LOW) {
                 blink = HIGH;
             }
-
         }
-    }
 
-    if ((millis() - lastDebounceTimeBtnStopBlink) > debounceDelay) {
         if (readingBtnStopBlink != stateBtnStopBlink) {
             stateBtnStopBlink = readingBtnStopBlink;
             if (stateBtnStopBlink == LOW) {
