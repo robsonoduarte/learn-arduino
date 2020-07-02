@@ -4,14 +4,22 @@ int pinLedRead = 8;
 int pinLedGreen = 9;
 int pinLedBlue = 10;
 
-int pinBtnBlink = 3;
-int pinBtnFade = 4;
+int pinBtnBlink = 4;
+int pinBtnStopBlink = 3;
+
+int blink;
+
+int stateBtnBlink;
+int stateBtnStopBlink;
+int lastStateBtnBlink = HIGH;
+int lastStateBtnStopBlink = HIGH;
+
+unsigned long debounceDelay = 300;
+unsigned long lastDebounceTimeBtnBlink;
+unsigned long lastDebounceTimeBtnStopBlink;
 
 void blinkLed(int pin);
 
-void fadeLed(int pin);
-
-void turnOffLed(int pin);
 
 void setup() {
     pinMode(pinLedRead, OUTPUT);
@@ -19,50 +27,58 @@ void setup() {
     pinMode(pinLedBlue, OUTPUT);
 
     pinMode(pinBtnBlink, INPUT_PULLUP);
-    pinMode(pinBtnFade, INPUT_PULLUP);
+    pinMode(pinBtnStopBlink, INPUT_PULLUP);
+
 }
 
-
 void loop() {
-    blinkLed(pinLedRead);
-    blinkLed(pinLedGreen);
-    blinkLed(pinLedBlue);
+    int readingBtnBlink = digitalRead(pinBtnBlink);
+    int readingBtnStopBlink = digitalRead(pinBtnStopBlink);
 
-/*    fadeLed(pinLedRead);
-    fadeLed(pinLedGreen);
-    fadeLed(pinLedBlue);*/
+    if (readingBtnBlink != lastStateBtnBlink ) {
+        lastDebounceTimeBtnBlink = millis();
+    }
 
-/*    turnOffLed(pinLedRead);
-    turnOffLed(pinLedGreen);
-    turnOffLed(pinLedBlue);*/
+    if (readingBtnStopBlink != lastStateBtnStopBlink) {
+        lastDebounceTimeBtnStopBlink = millis();
+    }
+
+
+    if ((millis() - lastDebounceTimeBtnBlink) > debounceDelay) {
+        if (readingBtnBlink != stateBtnBlink) {
+            stateBtnBlink = readingBtnBlink;
+            if (stateBtnBlink == LOW) {
+                blink = HIGH;
+            }
+
+        }
+    }
+
+    if ((millis() - lastDebounceTimeBtnStopBlink) > debounceDelay) {
+        if (readingBtnStopBlink != stateBtnStopBlink) {
+            stateBtnStopBlink = readingBtnStopBlink;
+            if (stateBtnStopBlink == LOW) {
+                blink = LOW;
+            }
+        }
+    }
+
+    if (blink) {
+        blinkLed(pinLedRead);
+        blinkLed(pinLedGreen);
+        blinkLed(pinLedBlue);
+    }
+
+    lastStateBtnBlink = readingBtnBlink;
+    lastStateBtnStopBlink = readingBtnStopBlink;
 }
 
 void blinkLed(int pin) {
     int pinState = digitalRead(pin);
-    if(pinState){
+    if (pinState) {
         digitalWrite(pin, LOW);
-    } else{
+    } else {
         digitalWrite(pin, HIGH);
     }
-    delay(1000);
+    delay(500);
 }
-
-void fadeLed(int pin) {
-/*    int fadeAmount = 10;
-    int brightness = 0;
-
-    while (brightness <= 1024){
-        brightness = brightness + fadeAmount;
-        analogWrite(pin, brightness);
-        delay(150);
-    }*/
-}
-
-void turnOffLed(int pin) {
-    digitalWrite(pin, LOW);
-    delay(1000);
-}
-
-
-
-
