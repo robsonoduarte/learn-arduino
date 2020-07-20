@@ -6,7 +6,7 @@ struct Report {
 };
 
 void printReports(Report reports[]) {
-    for (int idx = 0; idx < 10; idx++) {
+    for (int idx = 0; idx < 10; ++idx) {
         Report report = reports[idx];
         Serial.print(report.event);
         Serial.print(" | ");
@@ -18,7 +18,7 @@ Report reports[10];
 
 int indexReports = 0;
 int pinIgnition = 8;
-bool pinIgnitionLastState;
+bool lastIgnition = true;
 
 void setup() {
     pinMode(pinIgnition, INPUT_PULLUP);
@@ -28,17 +28,21 @@ void setup() {
 void loop() {
     bool ignition = !digitalRead(pinIgnition);
 
-    if (ignition && !pinIgnitionLastState) {
+    if (ignition && lastIgnition) {
         reports[indexReports] = {"Ignition On", millis()};
         indexReports++;
     }
 
-    if (!ignition && pinIgnitionLastState) {
+    if (!ignition && !lastIgnition) {
         reports[indexReports] = {"Ignition Off", millis()};
         indexReports++;
     }
 
     if (indexReports == 10) {
         printReports(reports);
+        indexReports = 0;
     }
+
+    lastIgnition = !ignition;
+
 }
