@@ -21,5 +21,6 @@ The projects made in this course are:
 * [C++ Switch](https://github.com/robsonoduarte/learn-arduino/tree/master/arduino-courses/arduino-brazilian-course/switch)
 * [Debounce](https://github.com/robsonoduarte/learn-arduino/tree/master/arduino-courses/arduino-brazilian-course/debounce)
 * [Serial Wirte](https://github.com/robsonoduarte/learn-arduino/tree/master/arduino-courses/arduino-brazilian-course/serial_write)
+* [Cpp Struct/Array](https://github.com/robsonoduarte/learn-arduino/tree/master/arduino-courses/arduino-brazilian-course/struct_array)
 
 
