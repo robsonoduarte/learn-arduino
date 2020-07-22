@@ -22,5 +22,6 @@ The projects made in this course are:
 * [Debounce](https://github.com/robsonoduarte/learn-arduino/tree/master/arduino-courses/arduino-brazilian-course/debounce)
 * [Serial Wirte](https://github.com/robsonoduarte/learn-arduino/tree/master/arduino-courses/arduino-brazilian-course/serial_write)
 * [C++ Struct/Array](https://github.com/robsonoduarte/learn-arduino/tree/master/arduino-courses/arduino-brazilian-course/struct_array)
+* [C++ Poo](https://github.com/robsonoduarte/learn-arduino/tree/master/arduino-courses/arduino-brazilian-course/poo)
 
 
