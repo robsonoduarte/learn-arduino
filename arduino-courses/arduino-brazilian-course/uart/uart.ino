@@ -1,10 +1,7 @@
 #include <Arduino.h>
 
-#define ledPin  8
-
 void setup() {
     Serial.begin(9600);
-    pinMode(ledPin, OUTPUT);
 }
 
 void loop() {
@@ -12,18 +9,18 @@ void loop() {
         char letter = Serial.read();
         switch (letter) {
             case 'H': { // HIGH
-                digitalWrite(ledPin, HIGH);
+                digitalWrite(LED_BUILTIN, HIGH);
                 break;
             }
             case 'L': { // LOW
-                digitalWrite(ledPin, LOW);
+                digitalWrite(LED_BUILTIN, LOW);
                 break;
             }
             case 'B': { // BLINK
                 int x = 0;
                 while (x <= 10) {
-                    digitalWrite(ledPin, !digitalRead(ledPin));
-                    digitalWrite(ledPin, digitalRead(ledPin));
+                    digitalWrite(LED_BUILTIN, !digitalRead(LED_BUILTIN));
+                    digitalWrite(LED_BUILTIN, digitalRead(LED_BUILTIN));
                     delay(1000);
                     x++;
                 }
