@@ -21,6 +21,8 @@ set(nano.bootloader.file atmega/ATmegaBOOT_168_atmega328.hex)
 set(nano.build.mcu atmega328p)
 
 
+include_directories(${ARDUINO_SDK_PATH}/hardware/arduino/avr/libraries/Wire/)
+
 link_directories(${CMAKE_CURRENT_SOURCE_DIR}/)
 
 generate_arduino_firmware(${PROJECT_NAME})
