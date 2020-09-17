@@ -1,14 +1,14 @@
 #include <Arduino.h>
 
 void setup() {
-    pinMode(LED_BUILTIN,HIGH);
+    Serial.begin(9600);
+    pinMode(LED_BUILTIN, OUTPUT);
 }
 
 void loop() {
+    Serial.println("Hello Clion Arduino Support...");
     digitalWrite(LED_BUILTIN, HIGH);
-    delay(2000);
+    delay(10000);
     digitalWrite(LED_BUILTIN, LOW);
-    delay(2000);
-
-    // :rocket: :ontraker: :arduino:
+    delay(10000);
 }
