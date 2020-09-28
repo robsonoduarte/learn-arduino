@@ -17,5 +17,5 @@ void loop(){
 	digitalWrite(LED_BUILTIN, LOW);
 
 	delay(1000);
-	Serial.println(BUILD_ENV_NAME);
+	//Serial.println(BUILD_ENV_NAME);
 }
