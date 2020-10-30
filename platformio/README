@@ -1,3 +1,7 @@
 PlatformIo Project Example
 
+Project in developing, in this momento for more information see:
+
 https://docs.platformio.org/en/latest/core/quickstart.html
+https://docs.platformio.org/en/latest/tutorials/core/unit_testing_blink.html
+https://docs.platformio.org/en/latest/projectconf/section_env_build.html#id2

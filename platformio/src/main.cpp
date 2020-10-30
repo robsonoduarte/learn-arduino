@@ -1,11 +1,5 @@
 #include "Arduino.h"
 
-#define BUILD_ENV_NAME
-
-#ifndef LED_BUILTIN
-#define LED_BUILTIN 13
-#endif
-
 void setup(){
 	Serial.begin(9600);
 	pinMode(LED_BUILTIN, OUTPUT);
@@ -16,6 +10,6 @@ void loop(){
 	delay(1000);
 	digitalWrite(LED_BUILTIN, LOW);
 	delay(1000);
+	Serial.print("Running on env => ");
 	Serial.println(BUILD_ENV_NAME);
-	Serial.println("oi");
 }
