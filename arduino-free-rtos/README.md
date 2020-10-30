@@ -1,4 +1,4 @@
-Simple Example of Free RTOS wiht Platformio
+Simple Example of Free RTOS with Platformio
 
 project in developing...
 
