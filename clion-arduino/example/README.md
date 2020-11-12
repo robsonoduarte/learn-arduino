@@ -7,3 +7,5 @@ But the JetBrains starting develop a [plugin](https://plugins.jetbrains.com/plug
 If you starting with Arduino and want use the Clion, I recomend that you use this new plugin.
 
 But if you want clone some project here that use the Arduino Support ( Arduino CMake ), so read this [documentation](https://plugins.jetbrains.com/plugin/11301-arduino-support) before.
+
+[Here](https://github.com/robsonoduarte/learn-arduino/tree/master/platformio) you can see a simple example of a project using the Platformio.
