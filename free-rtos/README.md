@@ -1,6 +1,6 @@
 Simple Example of FreeRTOS && Arduino && Platformio
 
-[Here](https://github.com/robsonoduarte/learn-arduino/tree/master/platformio) you can see how create one project using Arduino as framework and Platformio as Build Tool.
+[Here](https://github.com/robsonoduarte/learn-arduino/tree/master/platformio) you can see how create one project using Arduino as framework and Platformio as build tool.
 
 For more information about others technology used, see:
 
