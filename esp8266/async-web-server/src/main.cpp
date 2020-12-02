@@ -1,10 +1,11 @@
 #include "Arduino.h"
 #include "ESP8266WiFi.h"
+#include "server.h"
 
 //https://randomnerdtutorials.com/esp8266-nodemcu-async-web-server-espasyncwebserver-library/
 
-const char* ssid = "*";
-const char* password = "*";
+const char* ssid = "*"; // your wifi ssid
+const char* password = "*"; // your wifi password
 
 const int PIN_LED_RED = 5;
 const int PIN_LED_BLUE = 4;
@@ -27,10 +28,10 @@ void setup(){
         delay(1000);
         Serial.println("Connecting to Wifi...");
     }
+
     Serial.println(WiFi.localIP());
+
+    start();
 }
 
-void loop(){
-    Serial.println("running...");
-    delay(1000);
-}
+void loop(){}
