@@ -2,7 +2,6 @@
 #include "ESP8266WiFi.h"
 #include "server.h"
 
-//https://randomnerdtutorials.com/esp8266-nodemcu-async-web-server-espasyncwebserver-library/
 
 const char* ssid = "*"; // your wifi ssid
 const char* password = "*"; // your wifi password
